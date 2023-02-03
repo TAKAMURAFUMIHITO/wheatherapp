@@ -11,4 +11,5 @@ const options = {
 
 request(options, (error, res, body) => {
   console.log(`現在の${argument}の気温は${body.main.temp}度です。`);
+  console.log(`最高気温は${body.main.temp_max}度、最低気温は${body.main.temp_min}度、気圧は${body.main.pressure}Paです。`);
 });
